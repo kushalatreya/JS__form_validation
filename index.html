@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning__localStorage</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form>
+        <h1>Validating Web Forms</h1>
+
+        <label for="firstname">First Name</label>
+        <input id="firstname" type="text" name="firstname" placeholder="First name" onkeyup="confirmFirstNameInput(this)"
+            required />
+        <p>First name must be alphanumeric and contain 3 - 16 characters</p>
+
+        <label for="lastname">Last Name</label>
+        <input id="lastname" type="text" name="lastname" placeholder="Last name" />
+        <p>Last name must be alphanumeric and contain 3 - 16 characters</p>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="email" />
+        <p>Email must be a valid address, e.g. example@example.com</p>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="password">
+        <p>Password must be alphanumeric (@, _ and - are also allowed) and between 6 - 20 characters</p>
+
+        <label for="telephone">Telephone</label>
+        <input type="text" name="telephone" placeholder="telephone">
+        <p>A valid Telephone number (11 digits)</p>
+
+        <label for="bit">Bio</label>
+        <input type="text" name="bio" placeholder="Bio">
+        <p>Bio must contain only lowercase letters, numbers and hyphens and be 8 - 50 characters</p>
+        <button type="submit" disabled>Submit</button>
+        <!-- button is disabled, which is activated when all the required field is correctly filled. -->
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
